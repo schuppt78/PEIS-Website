@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEIS Founding Beta Program — Application Portal</title>
+  <meta name="description" content="Apply to participate in the controlled PEIS Founding Beta Program for complex capital project evaluation and forensic analysis.">
+  <link rel="canonical" href="https://peisintel.com/founding-beta.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PEIS Founding Beta Program — Application Portal">
+  <meta property="og:description" content="Controlled evaluation cohort for project owners, construction managers, and project controls professionals.">
+  <meta property="og:image" content="img/logo.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-link" aria-label="PEIS Home">
+        <img src="img/logo.svg" alt="Project Evaluation Intelligence System (PEIS)" width="200" height="38">
+      </a>
+      
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="product.html" class="nav-link">Product</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
+          <li><a href="validation.html" class="nav-link">Validation</a></li>
+          <li><a href="security.html" class="nav-link">Security</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="eyebrow">Controlled Evaluation Cohort</span>
+          <h1>PEIS Founding Beta Program</h1>
+          <p class="lead">
+            We are accepting a limited number of qualified organizations and professionals interested in evaluating PEIS on controlled, real-world project use cases.
+          </p>
+        </div>
+
+        <!-- Program Governance Notice -->
+        <div class="card" style="background: #F8FAFC; border-left: 4px solid var(--color-brand-cyan); margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Program Guidelines &amp; Manual Intake Protocol</h3>
+          <ul style="font-size: 0.92rem; margin-bottom: 0;">
+            <li style="margin-bottom: 0.6rem;"><strong>Application-Based Qualification:</strong> Every application is reviewed manually by our evaluation committee. Submission of an application does not guarantee participation.</li>
+            <li style="margin-bottom: 0.6rem;"><strong>No Automatic SaaS Accounts:</strong> Phase 1 does not feature instant public logins or unmanaged self-service account generation.</li>
+            <li style="margin-bottom: 0.6rem;"><strong>Strict Data Governance Boundary:</strong> <strong style="color: #DC2626;">DO NOT submit project documents, confidential records, proprietary customer information, Controlled Unclassified Information (CUI), classified information, Protected Health Information (PHI), credentials, passwords, API keys, or other sensitive project evidence through this public form.</strong></li>
+            <li><strong>Separate Controlled Onboarding:</strong> Actual project-data transfer, if later authorized, will occur through a separate controlled onboarding process under executed Non-Disclosure and Data Security Agreements.</li>
+          </ul>
+        </div>
+
+        <!-- Beta Application Form -->
+        <div class="form-card">
+          <h2 style="margin-bottom: 0.5rem; font-size: 1.6rem;">Founding Beta Application</h2>
+          <p style="font-size: 0.92rem; color: var(--text-subtle); margin-bottom: 2rem;">
+            Please provide your organizational context and candidate project profile to help us determine cohort fit.
+          </p>
+
+          <form id="founding-beta-form" novalidate>
+            <!-- Applicant Contact Information -->
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.15rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+                1. Professional Contact Information
+              </h3>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="applicant_name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="applicant_name" name="applicant_name" class="form-control" placeholder="Jane Doe" required>
+                  <span class="form-error-msg">Please enter your full name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="organization_name">Organization / Firm Name <span class="required">*</span></label>
+                  <input type="text" id="organization_name" name="organization_name" class="form-control" placeholder="Acme Construction Partners" required>
+                  <span class="form-error-msg">Please enter your organization name.</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="job_title">Job Title / Role <span class="required">*</span></label>
+                  <input type="text" id="job_title" name="job_title" class="form-control" placeholder="Director of Project Controls / Senior Counsel" required>
+                  <span class="form-error-msg">Please enter your professional job title.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="business_email">Business Email <span class="required">*</span></label>
+                  <input type="email" id="business_email" name="business_email" class="form-control" placeholder="jane.doe@organization.com" required>
+                  <span class="form-error-msg">Please enter a valid corporate or agency email.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="industry">General Industry Sector <span class="required">*</span></label>
+                <select id="industry" name="industry" class="form-control" required>
+                  <option value="">Select your industry sector...</option>
+                  <option value="Commercial Construction">Commercial Construction &amp; General Contracting</option>
+                  <option value="Civil Infrastructure">Civil Infrastructure &amp; Transportation</option>
+                  <option value="Federal / Defense / Government">Federal / Defense / Public Sector Agency</option>
+                  <option value="Energy / Industrial">Energy, Oil &amp; Gas, Industrial Capital Projects</option>
+                  <option value="Project Management / Consulting">Project Management / Construction Advisory</option>
+                  <option value="Claims Consulting / Legal">Construction Law, Claims Consulting &amp; Dispute Resolution</option>
+                  <option value="Owner / Institutional Developer">Institutional Owner / Real Estate Developer</option>
+                  <option value="Other">Other Specialized Sector</option>
+                </select>
+                <span class="form-error-msg">Please select your industry sector.</span>
+              </div>
+            </div>
+
+            <!-- Candidate Project Profile -->
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.15rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+                2. Candidate Project Profile for Beta Evaluation
+              </h3>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="project_type">Type of Project <span class="required">*</span></label>
+                  <input type="text" id="project_type" name="project_type" class="form-control" placeholder="e.g. Healthcare Facility, Bridge, Airport Expansion" required>
+                  <span class="form-error-msg">Please describe the project type.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="project_size">Approximate Project Value / Size <span class="required">*</span></label>
+                  <select id="project_size" name="project_size" class="form-control" required>
+                    <option value="">Select project contract scale...</option>
+                    <option value="Under $10M">Under $10M</option>
+                    <option value="$10M - $50M">$10M - $50M</option>
+                    <option value="$50M - $150M">$50M - $150M</option>
+                    <option value="$150M - $500M">$150M - $500M</option>
+                    <option value="$500M+">$500M+ (Mega-Project)</option>
+                  </select>
+                  <span class="form-error-msg">Please select approximate project scale.</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="record_count">Estimated Volume of Records/Documents <span class="required">*</span></label>
+                  <select id="record_count" name="record_count" class="form-control" required>
+                    <option value="">Select approximate document volume...</option>
+                    <option value="100 - 500 documents">100 - 500 documents</option>
+                    <option value="500 - 2,000 documents">500 - 2,000 documents</option>
+                    <option value="2,000 - 10,000 documents">2,000 - 10,000 documents</option>
+                    <option value="10,000+ documents">10,000+ documents (Large Archive)</option>
+                  </select>
+                  <span class="form-error-msg">Please select estimated record volume.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="project_status">Current Project Status <span class="required">*</span></label>
+                  <select id="project_status" name="project_status" class="form-control" required>
+                    <option value="">Select current status...</option>
+                    <option value="Active / Ongoing Construction">Active / Ongoing Construction</option>
+                    <option value="Completed / In Closeout">Completed / In Closeout</option>
+                    <option value="Active Claim / Dispute / Mediation">Active Claim / Dispute / Mediation</option>
+                    <option value="Pre-Construction / Planning">Pre-Construction / Planning</option>
+                  </select>
+                  <span class="form-error-msg">Please select project status.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="ground_truth">Are Known Outcomes / Ground Truth Available for Benchmark Comparison? <span class="required">*</span></label>
+                <select id="ground_truth" name="ground_truth" class="form-control" required>
+                  <option value="">Select ground truth availability...</option>
+                  <option value="Yes - Full historical outcome known">Yes — Full historical outcome / claim resolution known</option>
+                  <option value="Partial - Some known milestones/disputes">Partial — Known key milestones and partial dispute resolutions</option>
+                  <option value="No - Active project with unknown final outcome">No — Active project with unknown final outcome</option>
+                  <option value="Not Applicable">Not Applicable</option>
+                </select>
+                <span class="form-hint">Projects with historical ground truth allow immediate benchmark verification against known outcomes.</span>
+                <span class="form-error-msg">Please select ground truth status.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="evaluation_problem">Primary Project Evaluation Problem to Address <span class="required">*</span></label>
+                <textarea id="evaluation_problem" name="evaluation_problem" class="form-control" placeholder="Describe the primary challenge: e.g., verifying critical path delay claims across 18 monthly schedule updates, reconciling conflicting daily logs vs contractor delay notice, or auditing contract milestone compliance." required></textarea>
+                <span class="form-error-msg">Please describe the primary evaluation problem.</span>
+              </div>
+            </div>
+
+            <!-- Capabilities of Interest -->
+            <div id="capabilities-group" style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.15rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 0.75rem;">
+                3. PEIS Capabilities of Interest <span class="required">*</span>
+              </h3>
+              <p style="font-size: 0.85rem; color: var(--text-subtle); margin-bottom: 1rem;">Select all analytical capabilities you wish to evaluate in the beta cohort:</p>
+
+              <div class="checkbox-grid">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Master Chronology Construction" checked>
+                  <span>Master Chronology Construction</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Evidence Mapping & Provenance" checked>
+                  <span>Evidence Mapping &amp; Provenance</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Contradiction & Discrepancy Detection" checked>
+                  <span>Contradiction Detection</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Notice Compliance Auditing">
+                  <span>Notice Compliance Auditing</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Schedule Intelligence & CPM Float Analysis" checked>
+                  <span>Schedule Intelligence (CPM)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="RFI Turnaround Timeline Analysis">
+                  <span>RFI Timeline Analysis</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Change Event & Mod Reconstruction">
+                  <span>Change Event Reconstruction</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="capabilities" value="Dependency Revalidation Cascades">
+                  <span>Dependency Revalidation</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Participation & Collaboration -->
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.15rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+                4. Beta Participation Commitments
+              </h3>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="structured_feedback">Willingness to Provide Structured Feedback? <span class="required">*</span></label>
+                  <select id="structured_feedback" name="structured_feedback" class="form-control" required>
+                    <option value="">Select commitment level...</option>
+                    <option value="Yes - Dedicated review & structured survey responses">Yes — Dedicated review &amp; structured survey responses</option>
+                    <option value="Moderate - Periodic written feedback">Moderate — Periodic written feedback</option>
+                    <option value="Limited">Limited availability</option>
+                  </select>
+                  <span class="form-error-msg">Please indicate feedback commitment.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="future_paid_interest">Interest in Future Commercial/Paid PEIS Deployment? <span class="required">*</span></label>
+                  <select id="future_paid_interest" name="future_paid_interest" class="form-control" required>
+                    <option value="">Select commercial interest...</option>
+                    <option value="Yes - Seeking permanent deployment solution">Yes — Seeking permanent enterprise/project solution</option>
+                    <option value="Maybe - Dependent on beta evaluation results">Maybe — Dependent on beta evaluation results</option>
+                    <option value="Undecided / Academic / Research Evaluation">Undecided / Research / Exploratory</option>
+                  </select>
+                  <span class="form-error-msg">Please select commercial interest level.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="comments">Additional Comments / Specific Evaluation Goals (Optional)</label>
+                <textarea id="comments" name="comments" class="form-control" style="min-height: 80px;" placeholder="Any additional context regarding timeline, confidentiality requirements, or specific evaluation expectations."></textarea>
+              </div>
+            </div>
+
+            <!-- Submission Disclaimers & Action -->
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: 8px; margin-bottom: 2rem; border: 1px solid var(--border-subtle);">
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0; line-height: 1.5;">
+                <strong>Data Protection &amp; Confidentiality Boundary:</strong> By submitting this application, you confirm that no project documents, confidential records, proprietary customer information, CUI, classified data, PHI, credentials, passwords, or API keys have been submitted in this form. Submission does not guarantee acceptance. Actual project data transfer, if authorized, will occur through a separate controlled onboarding process.
+              </p>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">
+              Submit Founding Beta Application →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Application Confirmation Modal -->
+  <div id="beta-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="width: 60px; height: 60px; background: #ECFDF5; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; color: #059669; margin-bottom: 1rem;">
+          ✓
+        </div>
+        <h2 id="modal-title" style="font-size: 1.6rem; margin-bottom: 0.5rem;">Application Received</h2>
+        <span id="modal-ref-number" class="badge badge-operational" style="font-size: 0.95rem; padding: 6px 14px;">PEIS-BETA-0000</span>
+      </div>
+
+      <p id="modal-summary-text" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-main); margin-bottom: 1.5rem;">
+        Thank you. Your Founding Beta application has been safely recorded.
+      </p>
+
+      <div style="background: var(--bg-surface-subtle); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem; font-size: 0.88rem; color: var(--text-muted);">
+        <strong style="color: var(--color-brand-dark); display: block; margin-bottom: 0.5rem;">Next Steps in Manual Review:</strong>
+        <ol style="margin-left: 1.2rem; margin-bottom: 0;">
+          <li>Our review committee evaluates your project parameters against cohort capacity.</li>
+          <li>Qualified candidates will be contacted via business email to schedule an intake briefing.</li>
+          <li>Document ingestion is arranged under bilateral Non-Disclosure Agreements.</li>
+        </ol>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <button id="copy-record-btn" class="btn btn-secondary" style="flex: 1;">Copy Application Record</button>
+        <button id="download-record-btn" class="btn btn-secondary" style="flex: 1;">Download Receipt (.JSON)</button>
+        <button id="modal-close-btn" class="btn btn-primary" style="flex: 1;">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" style="filter: brightness(0) invert(1);">
+            <img src="img/logo.svg" alt="PEIS Logo" width="180" height="34">
+          </a>
+          <p>
+            Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="product.html">Product Overview</a></li>
+            <li><a href="how-it-works.html">How PEIS Works</a></li>
+            <li><a href="capabilities.html">Capability Matrix</a></li>
+            <li><a href="use-cases.html">Industry Use Cases</a></li>
+            <li><a href="validation.html">Validation &amp; Testing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance</h4>
+          <ul class="footer-links">
+            <li><a href="security.html">Security Principles</a></li>
+            <li><a href="founding-beta.html">Founding Beta Program</a></li>
+            <li><a href="about.html">About &amp; Mission</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal &amp; Beta</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
+            <li><a href="terms.html">Terms of Use (Draft)</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="beta-terms.html">Beta Agreement</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/beta-form.js"></script>
+</body>
+</html>

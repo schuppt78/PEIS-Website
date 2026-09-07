@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="100%" height="100%" fill="none">
+  <!-- Brand Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Hexagonal / Node Shield Background -->
+    <rect x="0" y="0" width="60" height="60" rx="12" fill="#0B132B"/>
+    <!-- Node Graph Lattice representing evidence-based evaluation -->
+    <circle cx="20" cy="20" r="4" fill="#00A896"/>
+    <circle cx="40" cy="20" r="4" fill="#00A896"/>
+    <circle cx="30" cy="35" r="5" fill="#48CAE4"/>
+    <circle cx="20" cy="48" r="4" fill="#64DFDF"/>
+    <circle cx="40" cy="48" r="4" fill="#64DFDF"/>
+    
+    <!-- Traceable Connections -->
+    <line x1="20" y1="20" x2="40" y2="20" stroke="#1C2541" stroke-width="2"/>
+    <line x1="20" y1="20" x2="30" y2="35" stroke="#00A896" stroke-width="2" stroke-dasharray="2 2"/>
+    <line x1="40" y1="20" x2="30" y2="35" stroke="#00A896" stroke-width="2"/>
+    <line x1="30" y1="35" x2="20" y2="48" stroke="#48CAE4" stroke-width="2"/>
+    <line x1="30" y1="35" x2="40" y2="48" stroke="#48CAE4" stroke-width="2" stroke-dasharray="2 2"/>
+    
+    <!-- Central Evaluation Core -->
+    <circle cx="30" cy="35" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="85" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#0B132B" letter-spacing="1.5">PEIS</text>
+  <text x="86" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#475569" letter-spacing="0.8">PROJECT EVALUATION INTELLIGENCE SYSTEM</text>
+</svg>

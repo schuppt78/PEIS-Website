@@ -1,0 +1,6 @@
+# PEIS Website - Search Engine Directives
+User-agent: *
+Allow: /
+
+# Canonical Sitemap
+Sitemap: https://peisintel.com/sitemap.xml
