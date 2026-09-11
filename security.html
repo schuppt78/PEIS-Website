@@ -31,14 +31,12 @@
 
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="product.html" class="nav-link">Product</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="use-cases.html" class="nav-link">Solutions</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How PEIS Works</a></li>
           <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
-          <li><a href="validation.html" class="nav-link">Validation</a></li>
-          <li><a href="security.html" class="nav-link">Security</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="security.html" class="nav-link active">Trust</a></li>
+          <li><a href="about.html" class="nav-link">Company</a></li>
         </ul>
         <div class="nav-cta-wrapper">
           <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
@@ -48,15 +46,62 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
-    <section class="section">
+    <!-- Hero Section with Trust Subnav -->
+    <section class="section" style="padding-bottom: 2rem;">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
           <span class="eyebrow">Enterprise Trust &amp; Governance</span>
           <h1>Security &amp; Data Integrity Principles</h1>
           <p class="lead">
             High-stakes capital project evaluations demand uncompromising security, deterministic data integrity, and strict configuration governance.
           </p>
+          
+          <nav class="trust-subnav" aria-label="Trust Hub Navigation">
+            <a href="security.html" class="trust-tab-btn active">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              Security Principles
+            </a>
+            <a href="validation.html" class="trust-tab-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Validation &amp; Testing Status
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Security Architecture Command Panel -->
+    <section class="section" style="padding-top: 1rem; padding-bottom: 2.5rem;">
+      <div class="container">
+        <div class="sec-architecture-box">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.75rem; color: #64DFDF; text-transform: uppercase; letter-spacing: 0.08em;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #00A896;"></span>
+              SEC_ARCH_V2 &nbsp;|&nbsp; Enterprise Isolation Model
+            </div>
+            <span class="badge" style="background: rgba(0, 168, 150, 0.2); color: #64DFDF; border: 1px solid rgba(100, 223, 223, 0.4); font-size: 0.72rem; font-family: var(--font-mono);">
+              ZERO SHARED TRAINING DATA
+            </span>
+          </div>
+          <h3 style="font-size: 1.6rem; letter-spacing: -0.01em;">Built from First Principles for Sensitive Capital Project Records</h3>
+          <p>
+            Project evaluation frequently touches confidential claims, unapproved change orders, executive meeting minutes, and proprietary commercial rate sheets. Our architecture ensures complete organizational boundary isolation and mathematical provenance.
+          </p>
+
+          <div class="sec-tiers-grid">
+            <div class="sec-tier-item">
+              <h4>1. Tenant &amp; Network Isolation</h4>
+              <p>Dedicated compute environments and encrypted storage per evaluation engagement. Zero cross-organizational dataset traversal or shared vector indexes.</p>
+            </div>
+            <div class="sec-tier-item">
+              <h4>2. SHA-256 Provenance Ledger</h4>
+              <p>Every ingested file is cryptographically hashed upon entry. Every finding points to immutable source coordinates with automated tamper invalidation.</p>
+            </div>
+            <div class="sec-tier-item">
+              <h4>3. Strict Human Authorization</h4>
+              <p>PEIS never autonomously executes binding project actions. All analytical findings are structured recommendations requiring qualified professional sign-off.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -64,76 +109,106 @@
     <!-- Core Security Principles Grid -->
     <section class="section section-alt">
       <div class="container">
-        <div class="grid grid-cols-2">
+        <div class="section-header">
+          <span class="eyebrow">Governance Principles</span>
+          <h2>The 8 Pillars of PEIS Data Governance</h2>
+          <p>Deterministic rules ensuring enterprise confidentiality, reproducibility, and defensibility.</p>
+        </div>
+
+        <div class="sec-principles-grid">
           
           <!-- Principle 1 -->
-          <div class="card">
-            <div class="card-icon">🔒</div>
-            <h3>1. Controlled Access &amp; Least Privilege</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">🔒</span>
+              <span class="badge badge-operational">SEC_01</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">1. Controlled Access &amp; Least Privilege</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               PEIS enforces role-based access control (RBAC) across all analytical tiers. Project datasets are segregated with strict authorization boundaries, preventing unauthorized data traversal across organizations or unentitled users.
             </p>
           </div>
 
           <!-- Principle 2 -->
-          <div class="card">
-            <div class="card-icon">⛓️</div>
-            <h3>2. Provenance Preservation &amp; Immutability</h3>
-            <p>
-              Upon document ingestion, every file is cataloged with cryptographic SHA-256 hashes. Analytical findings maintain immutable pointers to exact source coordinates, ensuring evidence chains cannot be silently tampered with or modified.
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">⛓️</span>
+              <span class="badge badge-operational">SEC_02</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">2. Provenance Preservation &amp; Immutability</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
+              Upon document ingestion, every file is cataloged with cryptographic SHA-256 hashes. Analytical findings maintain immutable pointers to exact source coordinates, enabling cryptographic integrity controls and automated tamper detection.
             </p>
           </div>
 
           <!-- Principle 3 -->
-          <div class="card">
-            <div class="card-icon">🛡️</div>
-            <h3>3. Data Integrity &amp; Cryptographic Verification</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">🛡️</span>
+              <span class="badge badge-operational">SEC_03</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">3. Data Integrity &amp; Cryptographic Verification</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               All extracted tokens, chronological timelines, and schedule evaluations are validated against source cryptographic fingerprints. Any modification to source records triggers immediate invalidation and revalidation alerts.
             </p>
           </div>
 
           <!-- Principle 4 -->
-          <div class="card">
-            <div class="card-icon">🔑</div>
-            <h3>4. Credential &amp; Key Protection</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">🔑</span>
+              <span class="badge badge-operational">SEC_04</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">4. Credential &amp; Key Protection</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               API tokens, database credentials, and cryptographic signing keys are managed through isolated environment configurations. PEIS strictly adheres to secret management protocols with zero hardcoded credentials.
             </p>
           </div>
 
           <!-- Principle 5 -->
-          <div class="card">
-            <div class="card-icon">🔀</div>
-            <h3>5. Separation of Analytical &amp; External Responsibilities</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">🔀</span>
+              <span class="badge badge-operational">SEC_05</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">5. Separation of Analytical &amp; External Responsibilities</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               The core analytical evaluation engine operates independently from external data sources and presentation services. This architectural isolation prevents untrusted external data from contaminating core analytical pipelines.
             </p>
           </div>
 
           <!-- Principle 6 -->
-          <div class="card">
-            <div class="card-icon">👤</div>
-            <h3>6. Human Review &amp; Decision Authority</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">👤</span>
+              <span class="badge badge-operational">SEC_06</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">6. Human Review &amp; Decision Authority</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Security and governance require explicit human review gates. PEIS never executes autonomous binding determinations; all outputs are presented as transparent analytical findings requiring human authorization.
             </p>
           </div>
 
           <!-- Principle 7 -->
-          <div class="card">
-            <div class="card-icon">📦</div>
-            <h3>7. Strict Configuration Control</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">📦</span>
+              <span class="badge badge-operational">SEC_07</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">7. Strict Configuration Control</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Analytical release candidates are governed under rigorous configuration control procedures. Verified baseline candidates are frozen with complete source manifests, ensuring reproducible and defensible analytical results.
             </p>
           </div>
 
           <!-- Principle 8 -->
-          <div class="card">
-            <div class="card-icon">🚫</div>
-            <h3>8. Zero Document Harvesting Policy</h3>
-            <p>
+          <div class="sec-card-v2">
+            <div class="sec-card-header">
+              <span class="sec-card-icon">🚫</span>
+              <span class="badge badge-operational">SEC_08</span>
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">8. Zero Document Harvesting Policy</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               User project records ingested during evaluations are never shared, pooled, or used to train public multi-tenant foundation models. Customer project data remains strictly proprietary to the evaluating organization.
             </p>
           </div>
@@ -147,10 +222,10 @@
       <div class="container container-narrow">
         <div class="card" style="border-left: 4px solid var(--color-brand-cyan); padding: 2rem;">
           <h3 style="margin-bottom: 0.75rem;">Phase 1 Public Website Security Posture</h3>
-          <p style="font-size: 0.95rem;">
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
             This public website serves as the informational and recruitment portal for the PEIS Founding Beta Program. In accordance with strict security requirements:
           </p>
-          <ul style="font-size: 0.92rem; margin-bottom: 0;">
+          <ul style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">
             <li><strong>No SaaS Backend Connection:</strong> This public website is isolated from the frozen PEIS product candidate and analytical backend.</li>
             <li><strong>No Public Application Logins:</strong> Phase 1 does not host automated public accounts or direct database connections.</li>
             <li><strong>No Confidential Document Uploads:</strong> The public Founding Beta application form strictly collects organizational contact details and project scoping metadata—never classified, PHI, or sensitive project files.</li>
@@ -163,7 +238,7 @@
     <section class="section section-dark">
       <div class="container container-narrow" style="text-align: center;">
         <span class="eyebrow">Controlled Beta</span>
-        <h2>Learn About the Founding Beta Governance</h2>
+        <h2>Learn About Founding Beta Governance</h2>
         <p class="lead">
           Review our structured, application-based beta intake process for evaluating complex project datasets.
         </p>
@@ -186,7 +261,7 @@
             Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
           </p>
           <div style="margin-top: 1rem;">
-            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+            <span class="badge badge-validation">Internal Test Baseline Passing</span>
           </div>
         </div>
 
@@ -214,15 +289,15 @@
         <div class="footer-col">
           <h4>Legal &amp; Beta</h4>
           <ul class="footer-links">
-            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
-            <li><a href="terms.html">Terms of Use (Draft)</a></li>
-            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div>&copy; 2026 PEIS Intelligence LLC. All rights reserved.</div>
         <div class="footer-legal-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>

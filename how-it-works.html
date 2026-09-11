@@ -31,14 +31,12 @@
 
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="product.html" class="nav-link">Product</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="use-cases.html" class="nav-link">Solutions</a></li>
+          <li><a href="how-it-works.html" class="nav-link active">How PEIS Works</a></li>
           <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
-          <li><a href="validation.html" class="nav-link">Validation</a></li>
-          <li><a href="security.html" class="nav-link">Security</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="security.html" class="nav-link">Trust</a></li>
+          <li><a href="about.html" class="nav-link">Company</a></li>
         </ul>
         <div class="nav-cta-wrapper">
           <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
@@ -49,133 +47,245 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="section">
+    <section class="section" style="padding-bottom: 2rem;">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 2rem;">
           <span class="eyebrow">The Evaluation Methodology</span>
           <h1>An Unbroken Chain from Raw Source to Governed Decision</h1>
           <p class="lead">
-            PEIS processes complex project documentation through a structured, 8-stage evaluation pipeline. Every conclusion is cryptographically anchored to verbatim source evidence, ensuring total auditability and zero ungrounded speculation.
+            PEIS processes complex project documentation through a structured, 8-stage evaluation pipeline. Every conclusion is cryptographically anchored to verbatim source evidence, ensuring rigorous traceability and evidence-grounded analytical rigor.
           </p>
-        </div>
-
-        <div style="text-align: center; margin-top: 1rem;">
-          <img src="img/evaluation-chain.svg" alt="PEIS 8-Stage Evaluation Chain Diagram" style="max-width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.06));">
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+            <a href="#pipeline-stages" class="btn btn-accent btn-lg">Explore the 8 Stages</a>
+            <a href="#revalidation-architecture" class="btn btn-secondary btn-lg">Dependency Revalidation</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Detailed 8-Stage Walkthrough -->
-    <section class="section section-alt">
-      <div class="container container-narrow">
+    <!-- 8-Stage Detailed Walkthrough -->
+    <section id="pipeline-stages" class="section section-alt">
+      <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Stage-by-Stage Breakdown</span>
-          <h2>The 8 Stages of Project Intelligence</h2>
-          <p>Explore the systematic transformation of records into decision-grade intelligence.</p>
+          <span class="eyebrow">The 8 Evaluation Stages</span>
+          <h2>Deterministic Processing with Full Provenance</h2>
+          <p>Trace how unstructured project archives progress into court-ready evaluation dossiers.</p>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <div class="stage-deep-list">
           <!-- Stage 1 -->
-          <div class="card" style="border-left: 4px solid var(--color-brand-primary);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: var(--bg-surface-subtle); color: var(--color-brand-steel);">Stage 01</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Ingestion Layer</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">01</span>
             </div>
-            <h3>1. Source Ingestion &amp; Content Normalization</h3>
-            <p>
-              PEIS ingests heterogeneous project artifacts—prime contracts, subcontracts, specifications, schedule files (XER/XML), RFIs, daily logs, submittals, meeting minutes, and change order packages. Documents are cataloged, cryptographic checksums (SHA-256) are generated to verify immutability, and textual/structural elements are normalized into structured tokens.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Ingestion Layer</span>
+              <h3>Source Ingestion &amp; Content Normalization</h3>
+              <p>
+                Heterogeneous project records—contracts, specifications, schedule baselines (XER/XML), RFIs, daily logs, submittals, meeting minutes, and change requests—are ingested and cataloged with SHA-256 cryptographic fingerprints to verify evidence immutability.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>SHA-256 REGISTRY</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Ingested Formats:</strong> PDF, P6 XER/XML, MSG/EML, DOCX, XLSX</li>
+                <li><strong>Normalization:</strong> OCR, layout preservation, coordinate bounding</li>
+                <li><strong>Integrity:</strong> Permanent immutable document hash assigned</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 2 -->
-          <div class="card" style="border-left: 4px solid var(--color-brand-cyan);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: rgba(0,168,150,0.1); color: var(--color-brand-cyan);">Stage 02</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Contractual Rules</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">02</span>
             </div>
-            <h3>2. Requirement Identification</h3>
-            <p>
-              The system extracts and models explicit contractual covenants: notice timing requirements (e.g., "written notice within 10 calendar days"), submittal review turnaround windows, baseline schedule update intervals, differing site conditions procedures, and milestone liquidated damages clauses.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Rules Layer</span>
+              <h3>Requirement Identification</h3>
+              <p>
+                Extracts and structures contractual covenants: strict notice timing requirements (e.g. "written notice within 10 calendar days"), submittal review turnaround windows, baseline schedule update intervals, differing site conditions protocols, and milestone liquidated damages provisions.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>CLAUSE_PARSER</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Extraction:</strong> Notice triggers, milestone dates, turnarounds</li>
+                <li><strong>Classification:</strong> Mandatory covenants vs procedural guidelines</li>
+                <li><strong>Schema:</strong> Normalized clause graph with contract coordinates</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 3 -->
-          <div class="card" style="border-left: 4px solid #3B82F6;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: #EFF6FF; color: #1E40AF;">Stage 03</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Factual Chronology</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">03</span>
             </div>
-            <h3>3. Evidence Extraction &amp; Mapping</h3>
-            <p>
-              Factual occurrences are extracted with exact temporal stamps and author/recipient metadata. PEIS builds an integrated event graph connecting RFI submissions, architect responses, field directives, inspector logs, weather records, and progress photo timestamps.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Factual Layer</span>
+              <h3>Evidence Extraction &amp; Mapping</h3>
+              <p>
+                Factual occurrences are isolated with exact temporal stamps and author/recipient metadata. PEIS builds an integrated event graph connecting RFI submissions, architect responses, field directives, inspector logs, weather records, and progress photo timestamps.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>EVENT_GRAPH</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Temporal Graph:</strong> Multi-party chronological ordering</li>
+                <li><strong>Cross-Referencing:</strong> RFI-to-Submittal-to-Change linkages</li>
+                <li><strong>Provenance:</strong> Verbatim text excerpts with byte/page bounds</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 4 -->
-          <div class="card" style="border-left: 4px solid var(--color-brand-teal);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: rgba(2,128,144,0.1); color: var(--color-brand-teal);">Stage 04</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Analytical Engine</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">04</span>
             </div>
-            <h3>4. Evaluation &amp; Compliance Synthesis</h3>
-            <p>
-              PEIS evaluates factual evidence against established contractual requirements. The engine checks timeline adherence (was notice timely submitted?), deliverable completeness (were mandatory attachments included?), and schedule impact correlation (did the event fall on the contemporaneously established critical path?).
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Analytical Layer</span>
+              <h3>Evaluation &amp; Compliance Synthesis</h3>
+              <p>
+                Evaluates factual execution records against established contractual covenants. The engine checks timeline adherence (was notice timely submitted?), deliverable completeness (were mandatory attachments provided?), and schedule impact correlation (did the event affect critical path activities?).
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>EVAL_ENGINE</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Compliance Checks:</strong> Notice timeliness &amp; procedural validity</li>
+                <li><strong>CPM Correlation:</strong> As-planned vs as-built critical path alignment</li>
+                <li><strong>Coverage:</strong> Requirement coverage matrices with full audit trails</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 5 -->
-          <div class="card" style="border-left: 4px solid #F59E0B;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: #FFFBEB; color: #B45309;">Stage 05</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Discrepancy Engine</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">05</span>
             </div>
-            <h3>5. Contradiction &amp; Variance Detection</h3>
-            <p>
-              Conflicting assertions across documents are surfaced immediately. For example, if a contractor's claim asserts site access was blocked on Day 45, but daily inspection reports indicate active structural steel erection on that exact date, PEIS flags the contradiction with dual-source citations.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem; color: #D97706;">Discrepancy Layer</span>
+              <h3>Contradiction &amp; Variance Detection</h3>
+              <p>
+                Conflicting assertions across documents are flagged immediately. For example, if a contractor claim asserts site access was barred on Day 45, but contemporaneous daily inspection logs indicate active steel erection by 12 workers on that exact date, PEIS isolates the conflict with dual-source citations.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span style="color: #D97706;">Technical Specifications</span>
+                <span style="color: #D97706;">CONTRADICTION_DETECTOR</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Cross-Matching:</strong> Multi-stakeholder assertion comparison</li>
+                <li><strong>Dual Citation:</strong> Supporting vs counter-evidence alignment</li>
+                <li><strong>Confidence:</strong> Factual disparity scoring and human escalation</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 6 -->
-          <div class="card" style="border-left: 4px solid #10B981;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: #ECFDF5; color: #047857;">Stage 06</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Synthesis Layer</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">06</span>
             </div>
-            <h3>6. Evidence-Supported Finding Generation</h3>
-            <p>
-              Discrete evaluations and verified facts are consolidated into coherent, factual findings. Every finding includes complete traceability breadcrumbs linking each assertion back to specific source page numbers and paragraph coordinates.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Synthesis Layer</span>
+              <h3>Evidence-Supported Finding Generation</h3>
+              <p>
+                Discrete evaluations, CPM schedule variances, and verified facts are synthesized into structured, defensible findings. Every finding includes unbroken provenance breadcrumbs linking each assertion directly to underlying source files and line coordinates.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>DOSSIER_GEN</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Dossier Assembly:</strong> Fact-based narrative synthesis</li>
+                <li><strong>Citation Breadcrumbs:</strong> Document ID, Page, Paragraph anchors</li>
+                <li><strong>Repeatability:</strong> Deterministic reproducibility across test runs</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 7 -->
-          <div class="card" style="border-left: 4px solid #EA580C;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: #FFF7ED; color: #C2410C;">Stage 07</span>
-              <span style="font-size: 0.85rem; color: var(--text-subtle); font-weight: 600;">Risk Quantification</span>
+          <div class="stage-deep-card">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">07</span>
             </div>
-            <h3>7. Risk &amp; Exposure Analysis</h3>
-            <p>
-              Findings are correlated into programmatic and commercial risk matrices: critical path delay exposure (calendar days), cumulative cost claim liabilities, constructive change vulnerability, and potential liquidated damage assessments.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem;">Risk Layer</span>
+              <h3>Risk &amp; Exposure Analysis</h3>
+              <p>
+                Findings are mapped into programmatic and commercial exposure matrices: critical path delay exposure (calendar days), cumulative cost claim liabilities, constructive change vulnerability, and potential liquidated damage assessments.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>EXPOSURE_SCORECARD</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Schedule Exposure:</strong> Critical path float consumption deltas</li>
+                <li><strong>Notice Liability:</strong> Forfeiture risk quantification</li>
+                <li><strong>Dispute Matrix:</strong> Claim strength and defense posture scoring</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Stage 8 -->
-          <div class="card" style="border: 2px solid var(--color-brand-cyan); background: #0B132B; color: #FFF;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: var(--color-brand-cyan); color: #0B132B; font-weight: 800;">Stage 08 • FINAL AUTHORITY</span>
-              <span style="font-size: 0.85rem; color: var(--color-brand-accent); font-weight: 600;">Human Governance</span>
+          <div class="stage-deep-card stage-decision">
+            <div class="stage-num-badge">
+              <span class="stage-num-label">STAGE</span>
+              <span class="stage-num-val">08</span>
             </div>
-            <h3 style="color: #FFFFFF;">8. Human Professional Review &amp; Decision</h3>
-            <p style="color: var(--text-inverse-muted);">
-              The analytical process terminates in human hands. Project managers, legal counsel, and executive decision-makers review the synthesized evidence dossier, adjust weightings if warranted, and exercise authoritative judgment. PEIS strictly serves as an analytical co-pilot—never an autonomous judge.
-            </p>
+            <div class="stage-main-info">
+              <span class="eyebrow" style="margin-bottom: 0.25rem; font-size: 0.72rem; background: rgba(100, 223, 223, 0.2); color: #64DFDF;">GOVERNED AUTHORITY</span>
+              <h3>Human Professional Review &amp; Decision</h3>
+              <p>
+                The analytical process terminates in human hands. Project managers, legal counsel, and executive decision-makers review the synthesized evidence dossier, adjust weightings if warranted, and exercise authoritative judgment. PEIS strictly serves as an analytical co-pilot—never an autonomous decision-maker.
+              </p>
+            </div>
+            <div class="stage-tech-panel">
+              <div class="stage-tech-header">
+                <span>Technical Specifications</span>
+                <span>HUMAN_GATE_AUTHORITY</span>
+              </div>
+              <ul class="arch-tier-list">
+                <li><strong>Authorization Gate:</strong> Mandatory human sign-off on determinations</li>
+                <li><strong>Audit Log:</strong> Reviewer identity, comments, and decision timestamp</li>
+                <li><strong>Export Formats:</strong> Audit packages, legal exhibits, executive briefs</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Provenance & Dependency Revalidation Deep Dive -->
-    <section class="section">
+    <section id="revalidation-architecture" class="section">
       <div class="container">
         <div class="grid grid-cols-2" style="align-items: center; gap: 3.5rem;">
           <div>
@@ -195,7 +305,27 @@
             </div>
           </div>
           <div>
-            <img src="img/provenance-graph.svg" alt="PEIS Provenance and Revalidation Graph" style="width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow-md);">
+            <div class="sec-architecture-box" style="margin: 0;">
+              <span class="eyebrow" style="background: rgba(100, 223, 223, 0.2); color: #64DFDF; margin-bottom: 0.75rem;">Revalidation Cycle</span>
+              <h3 style="font-size: 1.25rem;">Continuous Graph Integrity</h3>
+              <p style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.25rem;">
+                How PEIS responds dynamically to newly ingested project records without losing historical audit trails.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <div style="padding: 0.75rem 1rem; background: rgba(11, 19, 43, 0.8); border-left: 3px solid #00A896; border-radius: 4px; font-size: 0.82rem; font-family: var(--font-mono); color: #E2E8F0;">
+                  01 Ingest: New RFI-112-Resp.pdf received
+                </div>
+                <div style="padding: 0.75rem 1rem; background: rgba(11, 19, 43, 0.8); border-left: 3px solid #48CAE4; border-radius: 4px; font-size: 0.82rem; font-family: var(--font-mono); color: #E2E8F0;">
+                  02 Dependency Scan: Identifies Impacted Finding #04
+                </div>
+                <div style="padding: 0.75rem 1rem; background: rgba(11, 19, 43, 0.8); border-left: 3px solid #F59E0B; border-radius: 4px; font-size: 0.82rem; font-family: var(--font-mono); color: #FDE68A;">
+                  03 Invalidation Flag: Finding #04 Marked PENDING_REVAL
+                </div>
+                <div style="padding: 0.75rem 1rem; background: rgba(11, 19, 43, 0.8); border-left: 3px solid #10B981; border-radius: 4px; font-size: 0.82rem; font-family: var(--font-mono); color: #A7F3D0;">
+                  04 Targeted Re-Execution: Finding #04 Recomputed &amp; Logged
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -205,9 +335,9 @@
     <section class="section section-dark">
       <div class="container container-narrow" style="text-align: center;">
         <span class="eyebrow">Explore Next</span>
-        <h2>Review Current Operational Capabilities</h2>
+        <h2>Review Implemented Analytical Capabilities</h2>
         <p class="lead">
-          Explore our granular capability matrix detailing current operational features versus future roadmap items.
+          Explore our granular capability matrix detailing implemented features versus future roadmap items.
         </p>
         <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
           <a href="capabilities.html" class="btn btn-accent btn-lg">View Capabilities Matrix →</a>
@@ -229,7 +359,7 @@
             Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
           </p>
           <div style="margin-top: 1rem;">
-            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+            <span class="badge badge-validation">Internal Test Baseline Passing</span>
           </div>
         </div>
 
@@ -257,15 +387,15 @@
         <div class="footer-col">
           <h4>Legal &amp; Beta</h4>
           <ul class="footer-links">
-            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
-            <li><a href="terms.html">Terms of Use (Draft)</a></li>
-            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div>&copy; 2026 PEIS Intelligence LLC. All rights reserved.</div>
         <div class="footer-legal-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>

@@ -31,14 +31,12 @@
 
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="product.html" class="nav-link">Product</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="product.html" class="nav-link active">Product</a></li>
+          <li><a href="use-cases.html" class="nav-link">Solutions</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How PEIS Works</a></li>
           <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
-          <li><a href="validation.html" class="nav-link">Validation</a></li>
-          <li><a href="security.html" class="nav-link">Security</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="security.html" class="nav-link">Trust</a></li>
+          <li><a href="about.html" class="nav-link">Company</a></li>
         </ul>
         <div class="nav-cta-wrapper">
           <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
@@ -49,155 +47,322 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="section">
+    <section class="section" style="padding-bottom: 2rem;">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 2rem;">
           <span class="eyebrow">Product Architecture</span>
           <h1>Structured Analytical Intelligence for Complex Project Records</h1>
           <p class="lead">
-            PEIS replaces manual, fragmented document search with a structured analytical platform that correlates contractual requirements, project schedules, and factual event records into transparent, traceable evaluations.
+            PEIS transforms disorganized capital project archives into structured, verifiable evaluations. By correlating contractual requirements, schedule baselines, and factual event records, PEIS provides continuous traceability to underlying source evidence.
           </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+            <a href="#system-architecture" class="btn btn-accent btn-lg">System Architecture</a>
+            <a href="#analytical-pillars" class="btn btn-secondary btn-lg">The 13 Core Pillars</a>
+          </div>
+        </div>
+
+        <!-- 4-Tier Analytical Architecture Showcase -->
+        <div id="system-architecture" class="pipeline-showcase" style="margin-top: 2rem;">
+          <div class="pipeline-header">
+            <span class="eyebrow" style="background: rgba(100, 223, 223, 0.15); color: #64DFDF;">4-Tier Processing Pipeline</span>
+            <h3>Deterministic Analysis Layered with Governed Intelligence</h3>
+            <p>
+              How raw project documents are cataloged, parsed, correlated, and transformed into auditable intelligence dossiers.
+            </p>
+          </div>
+
+          <div class="arch-grid">
+            <!-- Tier 1 -->
+            <div class="arch-tier-card tier-dark">
+              <div class="arch-tier-header">
+                <span class="arch-tier-num">TIER_01</span>
+                <span class="arch-tier-tag">INGESTION</span>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Ingestion &amp; Fingerprint</h4>
+              <p style="font-size: 0.84rem; line-height: 1.45;">
+                Cryptographic hashing and layout parsing across heterogeneous document formats.
+              </p>
+              <ul class="arch-tier-list">
+                <li><span>●</span> SHA-256 Record Registry</li>
+                <li><span>●</span> Specification &amp; Drawing OCR</li>
+                <li><span>●</span> Primavera P6 XER Extraction</li>
+                <li><span>●</span> Email &amp; Daily Log Parsers</li>
+              </ul>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="arch-tier-card tier-dark">
+              <div class="arch-tier-header">
+                <span class="arch-tier-num">TIER_02</span>
+                <span class="arch-tier-tag">CORRELATION</span>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Entity &amp; Temporal Graph</h4>
+              <p style="font-size: 0.84rem; line-height: 1.45;">
+                Cross-document entity extraction and contemporaneous event sequencing.
+              </p>
+              <ul class="arch-tier-list">
+                <li><span>●</span> Chronological Event Graph</li>
+                <li><span>●</span> RFI-Submittal-Change Linking</li>
+                <li><span>●</span> Notice Clause Tracking</li>
+                <li><span>●</span> Milestone Association</li>
+              </ul>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="arch-tier-card tier-dark">
+              <div class="arch-tier-header">
+                <span class="arch-tier-num">TIER_03</span>
+                <span class="arch-tier-tag">REASONING</span>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Analytical Engine</h4>
+              <p style="font-size: 0.84rem; line-height: 1.45;">
+                Deterministic CPM float logic combined with cross-source contradiction detection.
+              </p>
+              <ul class="arch-tier-list">
+                <li><span>●</span> CPM Float Variance Models</li>
+                <li><span>●</span> Contradiction Detection Engine</li>
+                <li><span>●</span> Delay Impact Mapping</li>
+                <li><span>●</span> Dependency Revalidation</li>
+              </ul>
+            </div>
+
+            <!-- Tier 4 -->
+            <div class="arch-tier-card tier-dark" style="border: 2px solid var(--color-brand-cyan); background: rgba(15, 23, 42, 0.95);">
+              <div class="arch-tier-header">
+                <span class="arch-tier-num" style="color: #64DFDF;">TIER_04</span>
+                <span class="arch-tier-tag" style="background: rgba(100, 223, 223, 0.25); color: #64DFDF;">GOVERNED</span>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Governed Intelligence</h4>
+              <p style="font-size: 0.84rem; line-height: 1.45;">
+                Court-ready evidence dossiers under strict human decision authority.
+              </p>
+              <ul class="arch-tier-list">
+                <li><span>●</span> Traceable Citation Dossiers</li>
+                <li><span>●</span> Human Authorization Gates</li>
+                <li><span>●</span> Audit-Ready Evidence Pointers</li>
+                <li><span>●</span> Executive Briefing Packages</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- 13 Core Product Pillars -->
-    <section class="section section-alt">
+    <section id="analytical-pillars" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">The 13 Core Functional Pillars</span>
-          <h2>Comprehensive Analytical Coverage</h2>
+          <span class="eyebrow">Functional Specification</span>
+          <h2>The 13 Core Analytical Pillars</h2>
           <p>
-            PEIS operates across thirteen synchronized functional disciplines, ensuring every project fact is accounted for and rigorously validated.
+            PEIS operates across thirteen synchronized disciplines to extract, correlate, evaluate, and trace capital project evidence.
           </p>
         </div>
 
-        <div class="grid grid-cols-3">
+        <div class="pillars-grid">
           <!-- Pillar 1 -->
-          <div class="card">
-            <div class="card-icon">📥</div>
-            <h4>1. Heterogeneous Document Ingestion</h4>
-            <p>Ingests structured and unstructured data formats including PDFs, contracts, specifications, CPM schedules, RFIs, daily logs, email correspondence, and cost spreadsheets.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_01</span>
+              <span class="pillar-category">INGESTION</span>
+            </div>
+            <div class="pillar-title"><span>📥</span> Heterogeneous Document Ingestion</div>
+            <p class="pillar-desc">
+              Ingests structured and unstructured data formats including PDFs, contracts, specifications, CPM schedules, RFIs, daily logs, email correspondence, and cost spreadsheets.
+            </p>
+            <div class="pillar-evidence-spec">Formats: PDF, XER, XML, MSG, XLSX, CSV</div>
           </div>
 
           <!-- Pillar 2 -->
-          <div class="card">
-            <div class="card-icon">📋</div>
-            <h4>2. Requirement Identification</h4>
-            <p>Extracts and catalogs contractual obligations, milestone deadlines, strict notice provisions, deliverable specifications, and dispute escalation protocols.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_02</span>
+              <span class="pillar-category">CONTRACTUAL</span>
+            </div>
+            <div class="pillar-title"><span>📋</span> Requirement Identification</div>
+            <p class="pillar-desc">
+              Extracts and catalogs contractual obligations, milestone deadlines, strict notice provisions, deliverable specifications, and dispute escalation protocols.
+            </p>
+            <div class="pillar-evidence-spec">Outputs: Normalized Clause Registry &amp; Deadlines</div>
           </div>
 
           <!-- Pillar 3 -->
-          <div class="card">
-            <div class="card-icon">🔍</div>
-            <h4>3. Evidence Identification</h4>
-            <p>Isolates timestamped factual statements, site observations, formal submittals, and schedule update transmissions from raw record text.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_03</span>
+              <span class="pillar-category">FACTUAL</span>
+            </div>
+            <div class="pillar-title"><span>🔍</span> Evidence Identification</div>
+            <p class="pillar-desc">
+              Isolates timestamped factual statements, site observations, formal submittals, and schedule update transmissions from raw record text.
+            </p>
+            <div class="pillar-evidence-spec">Provenance: Verbatim Coordinates &amp; Hashes</div>
           </div>
 
           <!-- Pillar 4 -->
-          <div class="card">
-            <div class="card-icon">🔀</div>
-            <h4>4. Evidence Relationships</h4>
-            <p>Maps cross-document associations, linking RFI threads to submittal reviews, change requests, and resultant contract modifications.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_04</span>
+              <span class="pillar-category">GRAPH</span>
+            </div>
+            <div class="pillar-title"><span>🔀</span> Evidence Relationships</div>
+            <p class="pillar-desc">
+              Maps cross-document associations, linking RFI threads to submittal reviews, change requests, and resultant contract modifications.
+            </p>
+            <div class="pillar-evidence-spec">Graph: Multilateral Cross-Document Linkages</div>
           </div>
 
           <!-- Pillar 5 -->
-          <div class="card">
-            <div class="card-icon">📅</div>
-            <h4>5. Chronology Development</h4>
-            <p>Constructs unified, multi-source master chronologies that reveal the true sequence of project events across all stakeholder perspectives.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_05</span>
+              <span class="pillar-category">TEMPORAL</span>
+            </div>
+            <div class="pillar-title"><span>📅</span> Chronology Development</div>
+            <p class="pillar-desc">
+              Constructs unified, multi-source master chronologies that reveal the true sequence of project events across all stakeholder perspectives.
+            </p>
+            <div class="pillar-evidence-spec">Timeline: Timestamp-Anchored Event Sequences</div>
           </div>
 
           <!-- Pillar 6 -->
-          <div class="card">
-            <div class="card-icon">⚖️</div>
-            <h4>6. Contradiction Detection</h4>
-            <p>Identifies conflicting factual assertions between superintendent logs, official owner correspondence, progress meeting minutes, and contractor claims.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_06</span>
+              <span class="pillar-category">ANALYTICAL</span>
+            </div>
+            <div class="pillar-title"><span>⚖️</span> Contradiction Detection</div>
+            <p class="pillar-desc">
+              Identifies conflicting factual assertions between superintendent logs, official owner correspondence, progress meeting minutes, and contractor claims.
+            </p>
+            <div class="pillar-evidence-spec">Detection: Discrepancy Flagging &amp; Comparison</div>
           </div>
 
           <!-- Pillar 7 -->
-          <div class="card">
-            <div class="card-icon">📈</div>
-            <h4>7. Schedule Intelligence</h4>
-            <p>Evaluates critical path movements, float erosion, logic revisions, and activity duration modifications across consecutive schedule baselines.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_07</span>
+              <span class="pillar-category">SCHEDULE</span>
+            </div>
+            <div class="pillar-title"><span>📈</span> Schedule Intelligence</div>
+            <p class="pillar-desc">
+              Evaluates critical path movements, float erosion, logic revisions, and activity duration modifications across consecutive schedule baselines.
+            </p>
+            <div class="pillar-evidence-spec">Logic: Deterministic CPM Forward/Backward Pass</div>
           </div>
 
           <!-- Pillar 8 -->
-          <div class="card">
-            <div class="card-icon">📑</div>
-            <h4>8. Evidence-Supported Findings</h4>
-            <p>Synthesizes verified factual findings with full, unbroken citation to every supporting document, page, and excerpt.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_08</span>
+              <span class="pillar-category">SYNTHESIS</span>
+            </div>
+            <div class="pillar-title"><span>📑</span> Evidence-Supported Findings</div>
+            <p class="pillar-desc">
+              Synthesizes verified factual findings with full, unbroken citation to every supporting document, page, and excerpt.
+            </p>
+            <div class="pillar-evidence-spec">Dossier: Continuous Citation Lineage</div>
           </div>
 
           <!-- Pillar 9 -->
-          <div class="card">
-            <div class="card-icon">🛡️</div>
-            <h4>9. Risk Identification</h4>
-            <p>Quantifies schedule slippage risk, cost exposure, constructive acceleration potential, and notice non-compliance liabilities.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_09</span>
+              <span class="pillar-category">RISK</span>
+            </div>
+            <div class="pillar-title"><span>🛡️</span> Risk Identification</div>
+            <p class="pillar-desc">
+              Quantifies schedule slippage risk, cost exposure, constructive acceleration potential, and notice non-compliance liabilities.
+            </p>
+            <div class="pillar-evidence-spec">Metrics: Exposure Severity &amp; Float Erosion</div>
           </div>
 
           <!-- Pillar 10 -->
-          <div class="card">
-            <div class="card-icon">🎯</div>
-            <h4>10. Decision Support</h4>
-            <p>Provides program executives and claims professionals with clear, evidence-backed options, audit matrices, and defensible negotiation positions.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_10</span>
+              <span class="pillar-category">DECISION</span>
+            </div>
+            <div class="pillar-title"><span>🎯</span> Decision Support</div>
+            <p class="pillar-desc">
+              Provides program executives and claims professionals with clear, evidence-backed options, audit matrices, and defensible negotiation positions.
+            </p>
+            <div class="pillar-evidence-spec">Output: Executive Decision Briefings</div>
           </div>
 
           <!-- Pillar 11 -->
-          <div class="card">
-            <div class="card-icon">🔒</div>
-            <h4>11. Deterministic Provenance</h4>
-            <p>Guarantees cryptographic traceability: every analytical conclusion points to exact source coordinates with zero ungrounded assertions.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_11</span>
+              <span class="pillar-category">INTEGRITY</span>
+            </div>
+            <div class="pillar-title"><span>🔒</span> Deterministic Provenance</div>
+            <p class="pillar-desc">
+              Enforces cryptographic traceability: every analytical conclusion points to exact source coordinates with evidence-grounded citations.
+            </p>
+            <div class="pillar-evidence-spec">Security: SHA-256 Fingerprint Pointers</div>
           </div>
 
           <!-- Pillar 12 -->
-          <div class="card">
-            <div class="card-icon">🔁</div>
-            <h4>12. Dependency-Aware Revalidation</h4>
-            <p>Dynamically flags and updates downstream evaluations whenever new documents are ingested or historical evidence is amended.</p>
+          <div class="pillar-card">
+            <div class="pillar-top">
+              <span class="pillar-code">PILLAR_12</span>
+              <span class="pillar-category">LIFECYCLE</span>
+            </div>
+            <div class="pillar-title"><span>🔁</span> Dependency-Aware Revalidation</div>
+            <p class="pillar-desc">
+              Dynamically flags and updates downstream evaluations whenever new documents are ingested or historical evidence is amended.
+            </p>
+            <div class="pillar-evidence-spec">Revalidation: Automated Invalidation Cascades</div>
           </div>
 
           <!-- Pillar 13 -->
-          <div class="card" style="border: 2px solid var(--color-brand-cyan); background: #F0FDFA;">
-            <div class="card-icon" style="background: var(--color-brand-cyan); color: #FFF;">👤</div>
-            <h4 style="color: var(--color-brand-dark);">13. Human Review &amp; Authority</h4>
-            <p>Enforces human professional oversight across all analytical outputs. PEIS synthesizes facts; human experts maintain decision authority.</p>
+          <div class="pillar-card pillar-featured">
+            <div class="pillar-top">
+              <span class="pillar-code" style="color: var(--color-brand-cyan);">PILLAR_13</span>
+              <span class="pillar-category" style="background: rgba(0, 168, 150, 0.15); color: var(--color-brand-teal);">GOVERNANCE</span>
+            </div>
+            <div class="pillar-title" style="color: var(--color-brand-dark);"><span>👤</span> Human Review &amp; Authority</div>
+            <p class="pillar-desc" style="color: var(--text-main);">
+              Enforces human professional oversight across all analytical outputs. PEIS synthesizes facts; human experts maintain decision authority.
+            </p>
+            <div class="pillar-evidence-spec" style="border-left-color: var(--color-brand-teal);">Authority: Explicit Expert Approval Gate</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Architecture & Separation -->
+    <!-- Architecture Safeguards & Isolation -->
     <section class="section">
       <div class="container">
         <div class="grid grid-cols-2" style="align-items: center; gap: 3.5rem;">
           <div>
-            <span class="eyebrow">System Architecture</span>
+            <span class="eyebrow">Engineered Trust</span>
             <h2>Deterministic Analysis Combined with Governed AI</h2>
             <p>
-              Traditional AI models frequently generate hallucinated summaries without verifiable grounding. PEIS was engineered from first principles with an entirely different architecture:
+              Traditional generic AI models frequently hallucinate unsupported narratives. PEIS was engineered from first principles with an entirely different architecture:
             </p>
-            <ul>
+            <ul style="margin-left: 1.25rem; font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
               <li><strong>Deterministic CPM Logic:</strong> Schedule computations and critical path models rely on mathematically verifiable algorithms.</li>
               <li><strong>Strict Extraction Constraints:</strong> Natural language processing is restricted to verbatim extraction, normalization, and structured semantic linkage.</li>
               <li><strong>Traceable Citation Graph:</strong> Every extracted entity is permanently bound to its source document hash and bounding coordinates.</li>
             </ul>
           </div>
           <div>
-            <div class="card" style="background: var(--bg-surface-subtle); padding: 2rem;">
-              <h3 style="margin-bottom: 1rem;">Architectural Safeguards</h3>
+            <div class="card" style="background: var(--bg-surface-subtle); padding: 2rem; border-radius: var(--radius-xl);">
+              <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Architectural Safeguards</h3>
               <div style="display: flex; flex-direction: column; gap: 1rem;">
                 <div style="padding: 1rem; background: #FFF; border-radius: 8px; border: 1px solid var(--border-subtle);">
-                  <strong style="color: var(--color-brand-teal);">Zero Black-Box Scoring:</strong>
-                  <p style="font-size: 0.9rem; margin-bottom: 0; margin-top: 0.25rem;">Analytical determinations are directly inspectable through explicit rule chains.</p>
+                  <strong style="color: var(--color-brand-teal); font-size: 0.92rem;">Zero Black-Box Scoring:</strong>
+                  <p style="font-size: 0.85rem; margin-bottom: 0; margin-top: 0.25rem; color: var(--text-muted);">Analytical determinations are directly inspectable through explicit rule chains.</p>
                 </div>
                 <div style="padding: 1rem; background: #FFF; border-radius: 8px; border: 1px solid var(--border-subtle);">
-                  <strong style="color: var(--color-brand-teal);">Independent Layer Isolation:</strong>
-                  <p style="font-size: 0.9rem; margin-bottom: 0; margin-top: 0.25rem;">Data ingestion, analytical synthesis, and presentation layers maintain strict boundaries.</p>
+                  <strong style="color: var(--color-brand-teal); font-size: 0.92rem;">Independent Layer Isolation:</strong>
+                  <p style="font-size: 0.85rem; margin-bottom: 0; margin-top: 0.25rem; color: var(--text-muted);">Data ingestion, analytical synthesis, and presentation layers maintain strict boundaries.</p>
                 </div>
                 <div style="padding: 1rem; background: #FFF; border-radius: 8px; border: 1px solid var(--border-subtle);">
-                  <strong style="color: var(--color-brand-teal);">Immutable Audit Ledger:</strong>
-                  <p style="font-size: 0.9rem; margin-bottom: 0; margin-top: 0.25rem;">All analytical states and revalidation cascades are logged for complete auditability.</p>
+                  <strong style="color: var(--color-brand-teal); font-size: 0.92rem;">Immutable Audit Ledger:</strong>
+                  <p style="font-size: 0.85rem; margin-bottom: 0; margin-top: 0.25rem; color: var(--text-muted);">All analytical states and revalidation cascades are logged for structured auditability.</p>
                 </div>
               </div>
             </div>
@@ -206,10 +371,10 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Bottom CTA Section -->
     <section class="section section-dark">
       <div class="container container-narrow" style="text-align: center;">
-        <span class="eyebrow">Explore Next</span>
+        <span class="eyebrow">The Evaluation Methodology</span>
         <h2>Understand the 8-Stage Evaluation Process</h2>
         <p class="lead">
           See how raw project records transition step-by-step through our structured evaluation chain.
@@ -234,7 +399,7 @@
             Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
           </p>
           <div style="margin-top: 1rem;">
-            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+            <span class="badge badge-validation">Internal Test Baseline Passing</span>
           </div>
         </div>
 
@@ -262,15 +427,15 @@
         <div class="footer-col">
           <h4>Legal &amp; Beta</h4>
           <ul class="footer-links">
-            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
-            <li><a href="terms.html">Terms of Use (Draft)</a></li>
-            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div>&copy; 2026 PEIS Intelligence LLC. All rights reserved.</div>
         <div class="footer-legal-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>

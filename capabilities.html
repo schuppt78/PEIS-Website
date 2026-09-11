@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capabilities — PEIS | Project Evaluation Intelligence System</title>
+  <title>Capabilities Matrix — PEIS | Project Evaluation Intelligence System</title>
   <meta name="description" content="Granular breakdown of PEIS analytical capabilities: Master Chronology, Notice Compliance, Schedule Intelligence, Contradiction Analysis, and Provenance.">
   <link rel="canonical" href="https://peisintel.com/capabilities.html">
   
   <meta property="og:type" content="website">
   <meta property="og:title" content="PEIS Platform Capabilities Matrix">
-  <meta property="og:description" content="Explore operational and planned capabilities for complex project evaluation.">
+  <meta property="og:description" content="Explore implemented and planned capabilities for complex project evaluation.">
   <meta property="og:image" content="img/logo.svg">
   
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
@@ -31,14 +31,12 @@
 
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="product.html" class="nav-link">Product</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="use-cases.html" class="nav-link">Solutions</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How PEIS Works</a></li>
           <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
-          <li><a href="validation.html" class="nav-link">Validation</a></li>
-          <li><a href="security.html" class="nav-link">Security</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="security.html" class="nav-link">Trust</a></li>
+          <li><a href="about.html" class="nav-link">Company</a></li>
         </ul>
         <div class="nav-cta-wrapper">
           <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
@@ -49,249 +47,335 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="section">
+    <section class="section" style="padding-bottom: 1.5rem;">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 2rem;">
           <span class="eyebrow">Platform Specification</span>
-          <h1>Capabilities Matrix</h1>
+          <h1>Analytical Capability Matrix</h1>
           <p class="lead">
-            Transparently detailing current operational analytical modules versus planned roadmap capabilities.
+            Transparent technical breakdown of implemented analytical engines, deterministic parsing modules, and planned roadmap capabilities.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Capabilities Table / Cards -->
-    <section class="section section-alt">
+    <!-- Master Status & Metrics Strip -->
+    <section class="section-sm" style="background: var(--color-brand-dark); color: #FFF;">
       <div class="container">
-        <!-- Status Legend -->
-        <div style="display: flex; gap: 1.5rem; justify-content: flex-end; margin-bottom: 2rem; flex-wrap: wrap;">
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600;">
-            <span class="badge badge-operational">● Operational</span> Current in Core Validation Candidate
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-brand-cyan); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">
+              Module Execution Status
+            </div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; line-height: 1.1;">
+              11 Implemented Modules · 2 Planned Modules
+            </div>
+            <div style="font-size: 0.88rem; color: var(--text-inverse-muted); margin-top: 0.25rem;">
+              Core regression harness validated against governing baseline corpora.
+            </div>
           </div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600;">
-            <span class="badge badge-planned">○ Planned Roadmap</span> Scheduled for Subsequent Releases
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="badge badge-operational" style="font-size: 0.82rem; padding: 6px 12px;">● 11 Implemented</span>
+            <span class="badge badge-planned" style="font-size: 0.82rem; padding: 6px 12px; background: rgba(245, 158, 11, 0.2); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.4);">○ 2 Roadmap</span>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-2">
+    <!-- Capabilities Matrix Grid -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Functional Catalog</span>
+          <h2>Granular Capability Specifications</h2>
+          <p>Each module provides deterministic processing, structured output schemas, and continuous citation provenance.</p>
+        </div>
+
+        <div class="cap-matrix-grid">
           <!-- 1. Master Chronology -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">📅</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_01 · TEMPORAL</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Master Chronology Construction</h3>
-            <p>
-              Extracts and standardizes dates across heterogeneous record types (contracts, submittals, RFIs, meeting minutes, daily logs, email correspondence) to generate a unified multi-perspective timeline of project events.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Master Chronology Reconstruction</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Extracts, normalizes, and sequences timestamped events across contracts, submittals, RFIs, meeting minutes, daily logs, and email correspondence into a unified multi-perspective timeline.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Temporal entity resolution across varying date formats</li>
-              <li>Multi-party viewpoint correlation</li>
-              <li>Filterable chronology queries by party, topic, and timeframe</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Daily logs, meeting minutes, RFIs, email threads, submittals</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Multi-party chronological event graph with ISO 8601 timestamps</span>
+              </div>
+            </div>
           </div>
 
           <!-- 2. Evidence Mapping -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">🗺️</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_02 · PROVENANCE</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Evidence Mapping &amp; Graphing</h3>
-            <p>
-              Establishes semantic linkages between contractual requirements and corresponding performance evidence, tracking how project activities meet or deviate from covenants.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Evidence Mapping &amp; Graphing</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Establishes semantic linkages between contractual covenants and factual execution records, tracking compliance, variations, and document dependencies.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Clause-to-record relational linking</li>
-              <li>Cryptographic document hash binding</li>
-              <li>Traceability graph traversal</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Specifications, prime contract, drawings, inspection reports</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Clause-to-record relational citation graph with SHA-256 anchors</span>
+              </div>
+            </div>
           </div>
 
           <!-- 3. Requirement Evaluation -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">⚖️</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_03 · CONTRACTUAL</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Requirement Evaluation</h3>
-            <p>
-              Systematically assesses project execution against governing contract clauses, specifications, milestones, and statutory mandates.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Contract Requirement Evaluation</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Systematically evaluates project performance against contractual notice windows, milestone deliverables, and statutory mandates with explicit justifications.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Compliance status determination (Met, Partial, Unmet, Disputed)</li>
-              <li>Verifiable justification trails for each requirement</li>
-              <li>Quantitative requirement coverage metrics</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>General conditions, special provisions, technical specifications</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Requirement compliance status matrix (Met, Partial, Disputed)</span>
+              </div>
+            </div>
           </div>
 
           <!-- 4. Contradiction Analysis -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">⚡</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_04 · REASONING</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Contradiction &amp; Discrepancy Analysis</h3>
-            <p>
-              Scans across conflicting documentation to detect irreconcilable factual assertions between contractors, architects, inspectors, and program owners.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Contradiction &amp; Discrepancy Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Cross-examines multi-party records to identify irreconcilable factual assertions between superintendent logs, owner letters, payment submittals, and formal claims.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Direct contradiction identification with dual-source citations</li>
-              <li>Confidence scoring on factual conflicts</li>
-              <li>Automated conflict escalation for human review</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Multi-party correspondence, site inspector logs, contractor submittals</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Discrepancy inspection dossier with dual-source citations</span>
+              </div>
+            </div>
           </div>
 
           <!-- 5. Change Event Analysis -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">🔄</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_05 · SCOPE</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Change Event &amp; Modification Analysis</h3>
-            <p>
-              Traces proposed change orders, potential change notices (PCNs), and unilateral modifications back to initial field conditions, RFIs, or design alterations.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Change Event &amp; Modification Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Traces proposed change orders, potential change notices (PCNs), and unilateral directives back to initial field conditions, RFIs, or design bulletins.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Causal change chain reconstruction</li>
-              <li>Scope deviation tracking against baseline specifications</li>
-              <li>Cumulative change volume analysis</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Change orders, bulletined revisions, site directives, cost submittals</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Causal change lineage linking triggering RFI to final modification</span>
+              </div>
+            </div>
           </div>
 
           <!-- 6. RFI Timeline Analysis -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">📬</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_06 · LATENCY</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>RFI Timeline &amp; Responsiveness Analysis</h3>
-            <p>
-              Evaluates Request for Information (RFI) lifecycles against contractual response time limits, isolating delays in design clarifications.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">RFI Timeline &amp; Latency Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Evaluates Request for Information (RFI) submission and response intervals against contractual review turnaround limits to identify design clarification latency.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Turnaround duration calculations vs contractual windows</li>
-              <li>Critical path activity impact tagging</li>
-              <li>Late response cumulative delay calculations</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>RFI logs, engineering responses, architect submittal tracking</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Turnaround duration delta and critical-path activity association</span>
+              </div>
+            </div>
           </div>
 
           <!-- 7. Notice Compliance Analysis -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">⏱️</div>
-              <span class="badge badge-operational">Operational</span>
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_07 · GOVERNANCE</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Notice Compliance Analysis</h3>
-            <p>
-              Validates whether formal notice of delay, differing site conditions, or disputed work complied with contractual notice windows and delivery protocols.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Contract Notice Compliance Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Validates whether formal notices of delay, differing site conditions, or disputed work satisfied contractual delivery windows and notification methods.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Notice deadline calculation from triggering event date</li>
-              <li>Timeliness classification (Timely, Late, Defective Notice)</li>
-              <li>Waiver / forfeiture risk evaluation</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Formal delay letters, certified mail receipts, contract notice clauses</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Notice timeliness classification (Timely, Late, Defective Notice)</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 8. Schedule Intelligence (Schedule DNA) -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">📊</div>
-              <span class="badge badge-operational">Operational</span>
+          <!-- 8. Schedule Intelligence -->
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_08 · CPM SCHEDULE</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Schedule Intelligence &amp; Float Analysis</h3>
-            <p>
-              Performs deterministic CPM schedule analytics on Primavera XER and XML files to track critical path evolution, float consumption, and logic changes.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Schedule Intelligence &amp; Float Analysis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Executes deterministic CPM schedule analytics across Primavera XER and XML updates to track critical path migration, float consumption, and logic revisions.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Critical path migration across schedule updates</li>
-              <li>Float erosion and preferential logic change detection</li>
-              <li>As-Planned vs As-Built variance mapping</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Primavera P6 XER baselines and monthly update schedules</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Critical path evolution, float variance delta, logic alteration log</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 9. Finding and Risk Development -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">📑</div>
-              <span class="badge badge-operational">Operational</span>
+          <!-- 9. Finding & Risk Synthesis -->
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_09 · SYNTHESIS</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Finding &amp; Risk Synthesis</h3>
-            <p>
-              Aggregates discrete evaluations, schedule calculations, and contradictions into structured executive findings and exposure scorecards.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Finding &amp; Exposure Synthesis</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Aggregates discrete evaluations, CPM schedule calculations, and contradiction records into structured executive findings and exposure scorecards.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Evidence-grounded finding summaries</li>
-              <li>Schedule and dispute exposure risk scoring</li>
-              <li>Defensible audit trail for executive decision-makers</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Evaluated findings from Modules 01 through 08</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Evidence-grounded finding summaries and exposure matrices</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 10. Traceability & Auditability -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">🔒</div>
-              <span class="badge badge-operational">Operational</span>
+          <!-- 10. Deterministic Provenance -->
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_10 · INTEGRITY</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Deterministic Traceability</h3>
-            <p>
-              Ensures every analytical conclusion links directly to an immutable source record with page and paragraph citations.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Deterministic Provenance &amp; Audit Trail</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Ensures every analytical statement is permanently bound to exact byte coordinates, page numbers, and SHA-256 cryptographic source fingerprints.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>SHA-256 document fingerprinting</li>
-              <li>Zero ungrounded speculative assertions</li>
-              <li>Audit-ready export packages</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>All ingested project records and intermediate analytical states</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Cryptographic verification package with exact excerpt coordinates</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 11. Controlled Revalidation -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0;">🔄</div>
-              <span class="badge badge-operational">Operational</span>
+          <!-- 11. Controlled Dependency Revalidation -->
+          <div class="cap-card-v2">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_11 · LIFECYCLE</span>
+              <span class="cap-status-pill status-implemented">● IMPLEMENTED</span>
             </div>
-            <h3>Controlled Dependency Revalidation</h3>
-            <p>
-              Maintains an active dependency graph between documents, requirements, and findings so that modifications trigger targeted re-evaluation.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Controlled Dependency Revalidation</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Maintains an active graph of document dependencies, automatically invalidating and updating downstream findings whenever new records are introduced.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0;">
-              <li>Cascade detection for upstream record alterations</li>
-              <li>Invalidation flags on affected downstream findings</li>
-              <li>Incremental re-evaluation without full reprocessing</li>
-            </ul>
+            <div class="cap-io-matrix">
+              <div class="cap-io-block">
+                <strong>Ingested Records</strong>
+                <span>Newly uploaded or updated project record revisions</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Structured Output</strong>
+                <span>Targeted invalidation cascades and incremental re-evaluation log</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 12. Cost / Event Correlation -->
-          <div class="card" style="background: #FBFDFE; border-style: dashed;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0; background: #F1F5F9; color: #64748B;">💰</div>
-              <span class="badge badge-planned">Planned Roadmap</span>
+          <!-- 12. Cost / Event Correlation (Roadmap) -->
+          <div class="cap-card-v2 cap-roadmap">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_12 · COST (ROADMAP)</span>
+              <span class="cap-status-pill status-roadmap">○ PLANNED ROADMAP</span>
             </div>
-            <h3>Cost / Event Correlation</h3>
-            <p>
-              Deep integration linking cost ledger line items, payroll records, and vendor invoices directly to specific schedule disruption events.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Cost Ledger &amp; Event Correlation</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Direct integration linking cost ledger line items, payroll records, and vendor invoices directly to specific schedule disruption events.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0; color: #64748B;">
-              <li>Direct damages vs delay cost allocation (Under active development)</li>
-              <li>Earned value disruption curve mapping</li>
-            </ul>
+            <div class="cap-io-matrix" style="opacity: 0.85;">
+              <div class="cap-io-block">
+                <strong>Planned Ingestion</strong>
+                <span>ERP cost reports, certified payroll, subcontractor pay applications</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Planned Output</strong>
+                <span>Direct damages vs delay cost allocation curve (In engineering review)</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 13. Witness / Event Relationships -->
-          <div class="card" style="background: #FBFDFE; border-style: dashed;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0; background: #F1F5F9; color: #64748B;">👥</div>
-              <span class="badge badge-planned">Planned Roadmap</span>
+          <!-- 13. Witness Knowledge Graph (Roadmap) -->
+          <div class="cap-card-v2 cap-roadmap">
+            <div class="cap-card-header">
+              <span class="cap-id">MODULE_13 · ENTITY (ROADMAP)</span>
+              <span class="cap-status-pill status-roadmap">○ PLANNED ROADMAP</span>
             </div>
-            <h3>Witness &amp; Key Personnel Correlation</h3>
-            <p>
-              Advanced entity mapping correlating key individual participation across meeting minutes, daily logs, emails, and deposition transcripts.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Personnel &amp; Deposition Cross-Verification</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex: 1;">
+              Correlates key personnel statements across meeting minutes, daily logs, emails, and deposition transcripts to map individual knowledge timelines.
             </p>
-            <ul style="font-size: 0.92rem; margin-bottom: 0; color: #64748B;">
-              <li>Individual knowledge timeline reconstruction (In engineering review)</li>
-              <li>Deposition record cross-verification</li>
-            </ul>
+            <div class="cap-io-matrix" style="opacity: 0.85;">
+              <div class="cap-io-block">
+                <strong>Planned Ingestion</strong>
+                <span>Deposition transcripts, correspondence, organizational charts</span>
+              </div>
+              <div class="cap-io-block">
+                <strong>Planned Output</strong>
+                <span>Witness timeline reconstruction &amp; testimony cross-verification</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -300,10 +384,10 @@
     <!-- Bottom CTA -->
     <section class="section section-dark">
       <div class="container container-narrow" style="text-align: center;">
-        <span class="eyebrow">Next Steps</span>
-        <h2>Explore Real-World Project Applications</h2>
+        <span class="eyebrow">Practical Applications</span>
+        <h2>Explore Real-World Stakeholder Scenarios</h2>
         <p class="lead">
-          See how these capabilities solve complex challenges across construction, government oversight, and dispute resolution.
+          See how these capabilities solve complex challenges across capital project oversight, dispute defense, and claims resolution.
         </p>
         <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
           <a href="use-cases.html" class="btn btn-accent btn-lg">Explore Industry Use Cases →</a>
@@ -325,7 +409,7 @@
             Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
           </p>
           <div style="margin-top: 1rem;">
-            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+            <span class="badge badge-validation">Internal Test Baseline Passing</span>
           </div>
         </div>
 
@@ -353,15 +437,15 @@
         <div class="footer-col">
           <h4>Legal &amp; Beta</h4>
           <ul class="footer-links">
-            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
-            <li><a href="terms.html">Terms of Use (Draft)</a></li>
-            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div>&copy; 2026 PEIS Intelligence LLC. All rights reserved.</div>
         <div class="footer-legal-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>

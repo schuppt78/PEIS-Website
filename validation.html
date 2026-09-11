@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validation &amp; Testing Status — PEIS | Project Evaluation Intelligence System</title>
-  <meta name="description" content="Transparent reporting of PEIS internal benchmark testing, regression suite status (54/54 suites passing), validation scope, and explicit testing limitations.">
+  <meta name="description" content="Transparent reporting of PEIS internal benchmark testing, regression suite status, validation scope, and explicit testing limitations.">
   <link rel="canonical" href="https://peisintel.com/validation.html">
   
   <meta property="og:type" content="website">
@@ -31,14 +31,12 @@
 
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="product.html" class="nav-link">Product</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+          <li><a href="use-cases.html" class="nav-link">Solutions</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How PEIS Works</a></li>
           <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
-          <li><a href="validation.html" class="nav-link">Validation</a></li>
-          <li><a href="security.html" class="nav-link">Security</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="security.html" class="nav-link active">Trust</a></li>
+          <li><a href="about.html" class="nav-link">Company</a></li>
         </ul>
         <div class="nav-cta-wrapper">
           <a href="founding-beta.html" class="btn btn-primary btn-sm">Apply for Founding Beta</a>
@@ -48,37 +46,48 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
-    <section class="section">
+    <!-- Hero Section with Trust Subnav -->
+    <section class="section" style="padding-bottom: 2rem;">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
           <span class="eyebrow">Integrity &amp; Transparency</span>
           <h1>Validation &amp; Testing Status</h1>
           <p class="lead">
             We maintain total transparency regarding the current analytical testing status of PEIS, documenting internal benchmark results alongside explicit testing boundaries and limitations.
           </p>
+          
+          <nav class="trust-subnav" aria-label="Trust Hub Navigation">
+            <a href="security.html" class="trust-tab-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              Security Principles
+            </a>
+            <a href="validation.html" class="trust-tab-btn active">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Validation &amp; Testing Status
+            </a>
+          </nav>
         </div>
       </div>
     </section>
 
     <!-- Master Status Banner -->
-    <section class="section-sm" style="background: var(--color-brand-dark); color: #FFF;">
+    <section class="section-sm" style="background: #0B132B; border-top: 1px solid rgba(0, 168, 150, 0.3); border-bottom: 1px solid rgba(0, 168, 150, 0.3); color: #FFF;">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
           <div>
-            <div style="display: inline-block; font-size: 0.8rem; font-weight: 700; color: var(--color-brand-cyan); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">
-              Authoritative Internal Regression Status
+            <div style="display: inline-block; font-size: 0.75rem; font-weight: 700; color: #64DFDF; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.35rem; font-family: var(--font-mono);">
+              AUTHORITATIVE INTERNAL REGRESSION STATUS
             </div>
-            <div style="font-size: 2.4rem; font-weight: 800; color: #FFFFFF; line-height: 1.1;">
-              54 / 54 Test Suites Passing (100%)
+            <div style="font-size: 2.2rem; font-weight: 800; color: #FFFFFF; line-height: 1.1; letter-spacing: -0.02em;">
+              Internal Validation Baseline Passing
             </div>
-            <div style="font-size: 0.95rem; color: var(--text-inverse-muted); margin-top: 0.35rem;">
-              Master analytical regression harness across all core evaluation pipelines.
+            <div style="font-size: 0.88rem; color: #94A3B8; margin-top: 0.35rem; font-family: var(--font-mono);">
+              Release Candidate: Gate 4 RC1 &nbsp;|&nbsp; Regression Harness: Passing &nbsp;|&nbsp; Baseline Status: Frozen
             </div>
           </div>
           <div>
-            <span class="badge badge-operational" style="font-size: 0.9rem; padding: 8px 16px;">
-              ● Frozen Validation Baseline Verified
+            <span class="badge badge-operational" style="font-size: 0.85rem; padding: 8px 16px;">
+              ● Internal Validation Baseline Frozen
             </span>
           </div>
         </div>
@@ -86,20 +95,20 @@
     </section>
 
     <!-- Distinction Notice: Internal vs External Validation -->
-    <section class="section">
+    <section class="section" style="padding-top: 3rem; padding-bottom: 2rem;">
       <div class="container container-narrow">
         <div class="alert-box alert-warning">
           <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--status-warning-text);">
             Testing Status &amp; Validation Boundaries
           </h3>
           <p style="margin-bottom: 0.75rem; font-size: 0.95rem; line-height: 1.6;">
-            <strong>Internal Testing Completed:</strong> PEIS has completed controlled internal testing and regression testing across 54 internal test suites.
+            <strong>Internal Testing Completed:</strong> PEIS has completed internal regression and acceptance testing against its governing validation baseline.
           </p>
           <p style="margin-bottom: 0.75rem; font-size: 0.95rem; line-height: 1.6;">
             <strong>Independent External Validation Status:</strong> Independent external validation has not yet been completed. Internal test results, while exhaustive across baseline corpora, do not constitute third-party certification, government endorsement, or universal accuracy guarantees.
           </p>
           <p style="margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
-            <strong>Founding Beta Purpose:</strong> The Founding Beta Program is intended in part to obtain additional real-world performance, usability, and market evidence across diverse project environments.
+            <strong>Founding Beta Purpose:</strong> The Founding Beta Program is intended in part to obtain additional real-world performance, usability, and market evidence across diverse project environments. Beta participation gathers operational evidence and user feedback; it does not replace, constitute, or represent formal independent external validation.
           </p>
         </div>
       </div>
@@ -114,93 +123,181 @@
           <p>Every PEIS release candidate undergoes automated regression testing across eight distinct functional domains.</p>
         </div>
 
-        <div class="grid grid-cols-2">
+        <div class="val-disciplines-grid">
           <!-- Area 1 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>1. Controlled Benchmark Testing</h4>
-              <span class="badge badge-operational">54 / 54 Passing</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_01</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">1. Controlled Benchmark Testing</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Tests analytical pipelines against controlled synthetic and historical project datasets with known outcomes ("ground truth") to verify accuracy in fact extraction and timeline assembly.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Extraction Recall &amp; Precision</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>Ground-Truth Corpus Comparison</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 2 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>2. Master Regression Testing</h4>
-              <span class="badge badge-operational">54 / 54 Passing</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_02</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">2. Master Regression Testing</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Automated end-to-end test execution covering API endpoints, data parsers, schedule analyzers, and report generation modules to prevent functional regressions.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>100% Pipeline Coverage</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>Automated CI/CD Regression Harness</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 3 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>3. Provenance Integrity Testing</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_03</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">3. Provenance Integrity Testing</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Verifies cryptographic SHA-256 hash preservation, bounding coordinate mapping, and document immutability throughout the entire analytical lifecycle.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Cryptographic Immutability</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>SHA-256 Checksum Validation</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 4 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>4. Traceability &amp; Citation Testing</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_04</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">4. Traceability &amp; Citation Testing</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Asserts that 100% of generated findings, scores, and contradiction flags contain valid, inspectable hyperlinks to exact source excerpts without orphaned assertions.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Zero Orphan Assertions</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>Citation Reference Graph Walk</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 5 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>5. Requirement &amp; Evidence Evaluation</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_05</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">5. Requirement &amp; Evidence Evaluation</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Tests rule-based logic algorithms assessing contractual compliance (e.g., 10-day notice limits, submission turnaround windows, liquidated damage triggers).
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Deterministic Logic Evaluation</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>Contract Clause Assertion Matrix</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 6 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>6. Contradiction Analysis Testing</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_06</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
-              Validates discrepancy detection algorithms on intentionally conflicted record pairs (e.g., weather reports vs inspector delay claims) to ensure zero missed conflicts.
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">6. Contradiction Analysis Testing</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
+              Validates discrepancy detection algorithms on intentionally conflicted record pairs (e.g., weather reports vs inspector delay claims) to verify deterministic detection sensitivity on baseline discrepancies.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Conflict Detection Sensitivity</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>Contradiction Synthetic Pair Ingestion</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 7 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>7. Schedule Intelligence &amp; CPM Logic</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_07</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">7. Schedule Intelligence &amp; CPM Logic</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Tests mathematical Critical Path Method calculations, float erosion tracking, and logic change detection on complex multi-thousand-activity Primavera schedules.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>CPM Float &amp; Variance Precision</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>XER / XML Schedule Regression Suite</strong>
+              </li>
+            </ul>
           </div>
 
           <!-- Area 8 -->
-          <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-              <h4>8. Dependency &amp; Revalidation Cascades</h4>
-              <span class="badge badge-operational">Verified</span>
+          <div class="val-discipline-card">
+            <div class="val-disc-header">
+              <span class="val-disc-num">VAL_DISC_08</span>
+              <span class="val-disc-status">VERIFIED</span>
             </div>
-            <p>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">8. Dependency &amp; Revalidation Cascades</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
               Simulates real-world evidence additions and document amendments to confirm that affected downstream evaluations are accurately flagged and recalculated.
             </p>
+            <ul class="val-param-list">
+              <li class="val-param-item">
+                <span>Target Metric</span>
+                <strong>Automated Invalidation Cascades</strong>
+              </li>
+              <li class="val-param-item">
+                <span>Verification Method</span>
+                <strong>DAG Dynamic Update Trigger Tests</strong>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -216,24 +313,24 @@
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-          <div class="card" style="padding: 1.5rem;">
-            <h4 style="margin-bottom: 0.5rem; color: var(--color-brand-dark);">1. Dependency on Input Record Completeness</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">
+          <div class="card" style="padding: 1.75rem; border-left: 4px solid var(--color-brand-teal);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-brand-dark);">1. Dependency on Input Record Completeness</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.55;">
               PEIS evaluates evidence based strictly on ingested records. If critical project correspondence, unrecorded verbal agreements, or missing schedule updates are not provided to the system, evaluations will reflect the documentary record as ingested.
             </p>
           </div>
 
-          <div class="card" style="padding: 1.5rem;">
-            <h4 style="margin-bottom: 0.5rem; color: var(--color-brand-dark);">2. Non-Autonomous Decision Authority</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">
+          <div class="card" style="padding: 1.75rem; border-left: 4px solid var(--color-brand-cyan);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-brand-dark);">2. Non-Autonomous Decision Authority</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.55;">
               PEIS is an analytical intelligence platform, not an autonomous arbiter, judge, or licensed professional engineer. All evaluations and findings must be reviewed and authorized by qualified professionals.
             </p>
           </div>
 
-          <div class="card" style="padding: 1.5rem;">
-            <h4 style="margin-bottom: 0.5rem; color: var(--color-brand-dark);">3. OCR Quality Constraints</h4>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">
-              While PEIS incorporates advanced optical character recognition for scanned records, severely degraded scans, handwritten field notes, or damaged historical plans may require human transcription assistance.
+          <div class="card" style="padding: 1.75rem; border-left: 4px solid var(--color-brand-steel);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-brand-dark);">3. OCR Quality Constraints</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.55;">
+              While PEIS incorporates optical character recognition for scanned records, severely degraded scans, handwritten field notes, or damaged historical plans may require human transcription assistance.
             </p>
           </div>
         </div>
@@ -267,7 +364,7 @@
             Evidence-based project intelligence platform transforming fragmented records into structured, traceable evaluation.
           </p>
           <div style="margin-top: 1rem;">
-            <span class="badge badge-validation">Internal Testing: 54/54 Suites Passing</span>
+            <span class="badge badge-validation">Internal Test Baseline Passing</span>
           </div>
         </div>
 
@@ -295,15 +392,15 @@
         <div class="footer-col">
           <h4>Legal &amp; Beta</h4>
           <ul class="footer-links">
-            <li><a href="privacy.html">Privacy Policy (Draft)</a></li>
-            <li><a href="terms.html">Terms of Use (Draft)</a></li>
-            <li><a href="beta-terms.html">Beta Program Terms (Draft)</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="beta-terms.html">Beta Program Terms</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Project Evaluation Intelligence System (PEIS). All rights reserved.</div>
+        <div>&copy; 2026 PEIS Intelligence LLC. All rights reserved.</div>
         <div class="footer-legal-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
