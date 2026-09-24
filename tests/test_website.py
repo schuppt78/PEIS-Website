@@ -25,6 +25,8 @@ EXPECTED_PAGES = [
     "terms.html",
     "beta-terms.html",
     "404.html",
+    "lucevia.html",
+"lucevia-beta.html",
 ]
 
 class LinkExtractor(HTMLParser):
@@ -212,14 +214,46 @@ def test_no_absolute_or_unsubstantiated_claims():
             assert term not in content, f"Page {page} contains forbidden claim term '{term}'"
 
 def test_standardized_sitewide_navigation():
-    """Verify that all pages have the standardized commercial navigation IA."""
-    required_nav_labels = ["Product", "Solutions", "How PEIS Works", "Use Cases", "Trust", "Company", "Apply for Founding Beta"]
-    for page in EXPECTED_PAGES:
+    """Verify approved navigation for legacy PEIS pages, homepage, and Lucevia pages."""
+    legacy_peis_pages = [
+        page for page in EXPECTED_PAGES
+        if page not in ("index.html", "lucevia.html", "lucevia-beta.html")
+    ]
+
+    legacy_labels = [
+        "Product",
+        "Solutions",
+        "How PEIS Works",
+        "Use Cases",
+        "Trust",
+        "Company",
+        "Apply for Founding Beta",
+    ]
+
+    for page in legacy_peis_pages:
         content = (BASE_DIR / page).read_text(encoding="utf-8")
         assert 'class="main-nav"' in content, f"Page {page} missing main-nav"
-        for label in required_nav_labels:
+        for label in legacy_labels:
             assert label in content, f"Page {page} missing standard nav label '{label}'"
 
+    home_content = (BASE_DIR / "index.html").read_text(encoding="utf-8")
+    assert 'class="main-nav"' in home_content
+    for label in [
+        "PEIS",
+        "Lucevia",
+        "How PEIS Works",
+        "Use Cases",
+        "Trust",
+        "Company",
+        "PEIS Founding Beta",
+    ]:
+        assert label in home_content, f"Homepage missing approved nav label '{label}'"
+
+    for page in ("lucevia.html", "lucevia-beta.html"):
+        content = (BASE_DIR / page).read_text(encoding="utf-8")
+        assert 'class="lv-nav"' in content, f"Page {page} missing Lucevia navigation"
+        for label in ["PEIS", "Lucevia", "Company", "Lucevia beta details"]:
+            assert label in content, f"Page {page} missing Lucevia nav label '{label}'"
 def test_email_normalization():
     """Verify that only contact@peisintel.com is exposed as a public contact email address in HTML pages."""
     forbidden_emails = [
