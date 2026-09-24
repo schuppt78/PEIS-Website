@@ -155,11 +155,12 @@ def test_corporate_identity_and_copyright():
         assert "PEIS Intelligence LLC" in content, f"Page {page} missing legal entity 'PEIS Intelligence LLC'"
 
 def test_scope_isolation_and_forbidden_products():
-    """Verify complete product scope isolation (0 Contractor Exam Prep, 0 LUCEVIA sitewide)."""
+    """Verify product scope isolation while permitting the authorized Lucevia website presence."""
+    # Owner authorization dated 2026-09-24 permits Lucevia on this website.
+    # Contractor Exam Prep and the internal E07 designation remain prohibited.
     forbidden_terms = [
         "contractor exam",
         "exam prep",
-        "lucevia",
         "e07",
     ]
     for page in EXPECTED_PAGES:
