@@ -255,7 +255,7 @@ def test_standardized_sitewide_navigation():
         for label in ["PEIS", "Lucevia", "Company", "Lucevia beta details"]:
             assert label in content, f"Page {page} missing Lucevia nav label '{label}'"
 def test_email_normalization():
-    """Verify that only contact@peisintel.com is exposed as a public contact email address in HTML pages."""
+    """Keep the general inquiry mailbox exception limited to the approved contact link."""
     forbidden_emails = [
         "beta@peisintel.com",
         "inquiries@peisintel.com",
@@ -269,6 +269,12 @@ def test_email_normalization():
     ]
     for page in EXPECTED_PAGES:
         content = (BASE_DIR / page).read_text(encoding="utf-8").lower()
+        if page == "contact.html":
+            approved_link = '<a href="mailto:todd@peisintel.com?subject=peis%20general%20inquiry">todd@peisintel.com</a>'
+            assert content.count(approved_link) == 1
+            assert "<form" not in content
+            assert "inquiry recorded" not in content
+            content = content.replace(approved_link, "", 1)
         for bad_email in forbidden_emails:
             assert bad_email not in content, f"Page {page} contains unconfirmed or forbidden email address '{bad_email}'"
     

@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <!-- General Inquiry Form -->
+    <!-- General Inquiry by Email -->
     <section class="section">
       <div class="container container-narrow">
         <div class="form-card" style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2.5rem; box-shadow: var(--shadow-md);">
@@ -122,52 +122,12 @@
             </p>
           </div>
 
-          <form id="general-contact-form" onsubmit="event.preventDefault(); alert('Inquiry recorded. Our team will contact you shortly via email.'); this.reset();">
-            <div class="grid grid-cols-2">
-              <div class="form-group">
-                <label class="form-label" for="contact_name">Full Name <span class="required">*</span></label>
-                <input type="text" id="contact_name" name="name" class="form-control" placeholder="John Doe" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact_org">Organization / Agency <span class="required">*</span></label>
-                <input type="text" id="contact_org" name="organization" class="form-control" placeholder="Agency / Firm Name" required>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2">
-              <div class="form-group">
-                <label class="form-label" for="contact_email">Business Email <span class="required">*</span></label>
-                <input type="email" id="contact_email" name="email" class="form-control" placeholder="john.doe@organization.com" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact_subject">Inquiry Topic <span class="required">*</span></label>
-                <select id="contact_subject" name="subject" class="form-control" required>
-                  <option value="">Select inquiry topic...</option>
-                  <option value="Founding Beta Question">Founding Beta Program Question</option>
-                  <option value="Technical Validation Discussion">Technical Validation Discussion</option>
-                  <option value="Enterprise Architecture Briefing">Enterprise Architecture Briefing</option>
-                  <option value="Other">Other Inquiry</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact_message">Message <span class="required">*</span></label>
-              <textarea id="contact_message" name="message" class="form-control" placeholder="Please describe your inquiry or project question..." required style="min-height: 120px;"></textarea>
-            </div>
-
-            <div style="background: var(--bg-surface-subtle); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border: 1px solid var(--border-subtle);">
-              <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0; line-height: 1.45;">
-                <strong>Perimeter Notice:</strong> Please do not submit confidential project documents, proprietary rate cards, credentials, or CUI via this public contact form.
-              </p>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-              Send Inquiry Message →
-            </button>
-          </form>
+          <p>Email your inquiry to <a href="mailto:todd@peisintel.com?subject=PEIS%20General%20Inquiry">todd@peisintel.com</a>. This link opens a draft in your email app; you choose when to send it.</p>
+          <div style="background: var(--bg-surface-subtle); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border: 1px solid var(--border-subtle);">
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0; line-height: 1.45;">
+              <strong>Perimeter Notice:</strong> Please do not email confidential project documents, proprietary rate cards, credentials, or CUI.
+            </p>
+          </div>
         </div>
       </div>
     </section>
